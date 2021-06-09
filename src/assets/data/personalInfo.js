@@ -38,13 +38,13 @@ export const workExperienceData = {
         name: "180 Degrees Consulting NUS",
         role: "Deputy Project Leader · Project Analyst",
         img: oneEightyLogo,
-        themeColor: "#ffffff"
+        themeColor: "whitesmoke"
     },
     peoplesAssociation: {
         name: "People's Association – SkillsFuture Advice",
         role: "Central Singapore Community Development Council Intern",
         img: paLogo,
-        themeColor: "#ffffff"
+        themeColor: "whitesmoke"
     },
 }
 

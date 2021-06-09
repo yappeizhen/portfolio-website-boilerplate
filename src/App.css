@@ -13,7 +13,8 @@
 }
 
 .scrollNav-item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .thumbnail-wrapper {
@@ -33,7 +34,8 @@
   display: block;
   left: 50%;
   top: 50%;
-  max-width: 80%;
+  max-width: 70%;
+  max-height: 90%;
   transform: translate(-50%,-50%);
 }
 
@@ -2723,23 +2725,26 @@ mark {
 }
 .ant-anchor {
   box-sizing: border-box;
-  margin: 0;
   color: #b4bed2;
   font-size: 14px;
+  font-weight: 600;
   font-variant: tabular-nums;
   line-height: 1.5;
   list-style: none;
   font-feature-settings: "tnum";
-  position: relative;
-  padding: 0 0 0 2px;
+  position: fixed;
+  padding-right: 15px;
 }
 .ant-anchor-wrapper {
-  margin-left: -4px;
-  padding-left: 4px;
-  overflow: auto;
-  background-color: #ce4c92;
+  position: fixed;
+  margin-top: 15%;
+  margin-left: 87%;
+  text-align: right;
+  background-color: transparent;
 }
+
 .ant-anchor-ink {
+  margin-left: 100%;
   position: absolute;
   top: 0;
   left: 0;

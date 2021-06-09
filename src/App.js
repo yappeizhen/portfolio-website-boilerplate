@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Thumbnail from './components/Thumbnail';
 import Introduction from './components/Introduction';
-import ScrollNav from './components/ScrollNav';
 import { personalInfoData, workExperienceData, projectData } from './assets/data/personalInfo';
-import { Row, Col } from 'antd';
+import { Row, Col, Anchor } from 'antd';
+const { Link } = Anchor;
 
 const App = () => {
+  const [navPoint, setNavPoint] = useState()
 
   return (
     <div className="App">
       <Header person={personalInfoData} />
-      <ScrollNav/>
+      <Anchor class="scrollNav">
+        <Link href="#profile" title="Profile"/>
+        <Link href="#work" title="Work"/>
+        <Link href="#projects" title="Projects"/>
+        <Link href="#socialImpact" title="Social Impact"/>
+      </Anchor>
+      <div id="profile"/>
       <section className="home-section">
-        <Introduction person={personalInfoData} />
+        <Introduction  person={personalInfoData} />
+        <div id="work"/>
       </section>
       <section className="home-section">
         <h2 className="section-title">Work Experience</h2>
@@ -28,8 +36,8 @@ const App = () => {
             <Thumbnail experience={workExperienceData.solveware} />
           </Col>
         </Row>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Row>
           <Col lg={12}>
             <Thumbnail experience={workExperienceData.consulting} />
@@ -38,9 +46,10 @@ const App = () => {
             <Thumbnail experience={workExperienceData.peoplesAssociation} />
           </Col>
         </Row>
+        <div id="projects"/>
       </section>
       <section className="home-section">
-        <h2 className="section-title">Projects</h2>
+        <h2 id="projects" className="section-title">Projects</h2>
         <br />
         <Row>
           <Col lg={12}>
@@ -50,8 +59,8 @@ const App = () => {
             <Thumbnail experience={projectData.perfectMatch} />
           </Col>
         </Row>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Row>
           <Col lg={12}>
             <Thumbnail experience={projectData.sustainathon} />
@@ -60,12 +69,17 @@ const App = () => {
             <Thumbnail experience={projectData.scdfxibm} />
           </Col>
         </Row>
-        <br/>
+        <br />
         <Row>
           <Col lg={12}>
             <Thumbnail experience={projectData.fishbowl} />
           </Col>
         </Row>
+        <div id="socialImpact"/>
+      </section>
+      <section className="home-section">
+        <h2 id="socialImpact" className="section-title">Social Impact</h2>
+        <br />
       </section>
       <Footer person={personalInfoData} />
     </div>
