@@ -11,7 +11,7 @@ function Introduction(props) {
                         <h2>Hello!</h2>
                         <br/>
                         <h1 style={{ margin: '0' }}>I'm <span style={{ color: "#ce4c92" }}>{person.firstName}</span>,</h1>
-                        <h1>a {person.roles[0]} and {person.roles[1]}</h1>
+                        <h1>{person.areaOfInterest}</h1>
                     </div>
                 </Col>
                 <Col lg={11}>

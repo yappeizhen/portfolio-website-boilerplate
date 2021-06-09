@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Thumbnail from './components/Thumbnail';
 import Introduction from './components/Introduction';
 import ScrollNav from './components/ScrollNav';
-import { personalInfoData, workExperienceData } from './assets/data/personalInfo';
+import { personalInfoData, workExperienceData, projectData } from './assets/data/personalInfo';
 import { Row, Col } from 'antd';
 
 const App = () => {
@@ -22,10 +22,10 @@ const App = () => {
         <br />
         <Row>
           <Col lg={12}>
-            <Thumbnail experience={workExperienceData.solveware} />
+            <Thumbnail experience={workExperienceData.aphrodite} />
           </Col>
           <Col lg={12}>
-            <Thumbnail experience={workExperienceData.aphrodite} />
+            <Thumbnail experience={workExperienceData.solveware} />
           </Col>
         </Row>
         <br/>
@@ -44,10 +44,26 @@ const App = () => {
         <br />
         <Row>
           <Col lg={12}>
-            <Thumbnail experience={workExperienceData.solveware} />
+            <Thumbnail experience={projectData.mapTheSystem} />
           </Col>
           <Col lg={12}>
-            <Thumbnail experience={workExperienceData.solveware} />
+            <Thumbnail experience={projectData.perfectMatch} />
+          </Col>
+        </Row>
+        <br/>
+        <br/>
+        <Row>
+          <Col lg={12}>
+            <Thumbnail experience={projectData.sustainathon} />
+          </Col>
+          <Col lg={12}>
+            <Thumbnail experience={projectData.scdfxibm} />
+          </Col>
+        </Row>
+        <br/>
+        <Row>
+          <Col lg={12}>
+            <Thumbnail experience={projectData.fishbowl} />
           </Col>
         </Row>
       </section>
