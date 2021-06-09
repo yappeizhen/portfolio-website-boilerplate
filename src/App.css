@@ -4,22 +4,37 @@
   text-align: center;
 }
 
+.scrollNav {
+  width: 5%;
+  position: fixed;
+  text-align: right;
+  margin-left: 90%;
+  margin-top: 15%;
+}
+
+.scrollNav-item {
+  margin-bottom: 10px;
+}
+
 .thumbnail-wrapper {
   text-align: left;
   display: inline;
 }
 
 .thumbnail-card {
+  position: relative;
   text-align: center !important;
-  width: 450px !important;
-  height: 300px !important;
+  width: 90% !important;
+  height: 20rem !important;
 }
 
 .thumbnail-img {
-  object-fit: contain !important;
-  max-width: 100%;
-  max-height: 100%;
+  position: absolute;
   display: block;
+  left: 50%;
+  top: 50%;
+  max-width: 80%;
+  transform: translate(-50%,-50%);
 }
 
 .section-title {
@@ -35,16 +50,16 @@
   text-align: left;
   display: inline-block;
   margin-top: 20px;
-  margin-left: 55px;
+  margin-left: 15%;
   margin-bottom: 50px;
 }
 
 .profile-pic {
   border-radius: 50%;
-  width: 350px;
+  width: 370px;
   display: inline;
-  margin-top: -30px;
-  margin-right: -100px;
+  margin-top: -35px;
+  margin-right: -20%;
 }
 
 .profile-pattern {
@@ -53,14 +68,14 @@
   display: inline;
   z-index: -1;
   margin-top: 100px;
-  margin-left: -100px;
+  margin-left: -18%;
 }
 
 .home-section {
   margin-top: 150px;
   margin-bottom: 150px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 6.25rem;
+  margin-right: 9.3rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Thumbnail from './components/Thumbnail';
 import Introduction from './components/Introduction';
+import ScrollNav from './components/ScrollNav';
 import { personalInfoData, workExperienceData } from './assets/data/personalInfo';
 import { Row, Col } from 'antd';
 
@@ -12,13 +13,14 @@ const App = () => {
   return (
     <div className="App">
       <Header person={personalInfoData} />
+      <ScrollNav/>
       <section className="home-section">
         <Introduction person={personalInfoData} />
       </section>
       <section className="home-section">
         <h2 className="section-title">Work Experience</h2>
         <br />
-        <Row gutter={16}>
+        <Row>
           <Col lg={12}>
             <Thumbnail experience={workExperienceData.solveware} />
           </Col>
@@ -28,7 +30,7 @@ const App = () => {
         </Row>
         <br/>
         <br/>
-        <Row gutter={16}>
+        <Row>
           <Col lg={12}>
             <Thumbnail experience={workExperienceData.consulting} />
           </Col>
@@ -40,7 +42,7 @@ const App = () => {
       <section className="home-section">
         <h2 className="section-title">Projects</h2>
         <br />
-        <Row gutter={16}>
+        <Row>
           <Col lg={12}>
             <Thumbnail experience={workExperienceData.solveware} />
           </Col>
