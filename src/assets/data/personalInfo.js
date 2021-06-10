@@ -99,7 +99,7 @@ export const socialImpactData = {
         themeColor: "whitesmoke"
     },
     connectTuition: {
-        name: "Head of Relations",
+        name: "Connect Tuition – Head of Relations",
         role: "Initiated a virtual mentorship programme for underprivileged students, providing tutoring support in light of COVID-19 disruptions",
         img: connectTuitionLogo,
         themeColor: "whitesmoke"
