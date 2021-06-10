@@ -13,6 +13,10 @@ import tcsLogo from './../projectLogos/tcsLogo.png';
 import scdfxibmLogo from './../projectLogos/scdfxibmLogo.png';
 import fishbowlLogo from './../projectLogos/fishbowlLogo.png';
 
+import nusEnablersLogo from './../socialImpactLogos/nusEnablersLogo.png';
+import evgLogo from './../socialImpactLogos/evgLogo.png';
+import connectTuitionLogo from './../socialImpactLogos/connectTuitionLogo.png';
+
 export const personalInfoData = {
     firstName: "Pei Zhen",
     lastName: "Yap",
@@ -77,6 +81,27 @@ export const projectData = {
         name: "The Fishbowl Challenge 2020",
         role: "Challenger · Entrepreneur",
         img: fishbowlLogo,
+        themeColor: "whitesmoke"
+    },
+}
+
+export const socialImpactData = {
+    nusEnablers: {
+        name: "NUS Enablers – Programmes Director",
+        role: "A student-run club building an inclusive community for students with special needs",
+        img: nusEnablersLogo,
+        themeColor: "whitesmoke"
+    },
+    projectAgritourism: {
+        name: "Project Agritourism – Leader",
+        role: "Launched a new agricultural tourism model in Tra Vinh, Vietnam to stimulate upskilling and create sustainable income sources",
+        img: evgLogo,
+        themeColor: "whitesmoke"
+    },
+    connectTuition: {
+        name: "Head of Relations",
+        role: "Initiated a virtual mentorship programme for underprivileged students, providing tutoring support in light of COVID-19 disruptions",
+        img: connectTuitionLogo,
         themeColor: "whitesmoke"
     },
 }

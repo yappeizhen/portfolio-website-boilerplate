@@ -23,11 +23,17 @@
   max-width: 570px;
 }
 
+.thumbnail-wrapper.small {
+  text-align: left;
+  display: inline-block;
+  max-width: 380px;
+}
+
 .thumbnail-card {
   position: relative;
   text-align: center !important;
   width: 80%;
-  height: 20rem !important;
+  height: 15rem !important;
 }
 
 .thumbnail-img {
@@ -42,6 +48,12 @@
 
 .thumbnail-text {
   width: 570px !important;
+  padding-right: 100px;
+}
+
+.thumbnail-text.small {
+  width: 400px;
+  padding-right: 270px;
 }
 
 .section-title {
