@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,8 +9,6 @@ import { Row, Col, Anchor } from 'antd';
 const { Link } = Anchor;
 
 const App = () => {
-  const [navPoint, setNavPoint] = useState()
-
   return (
     <div className="App">
       <Header person={personalInfoData} />
