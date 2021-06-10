@@ -20,12 +20,13 @@
 .thumbnail-wrapper {
   text-align: left;
   display: inline-block;
+  max-width: 570px;
 }
 
 .thumbnail-card {
   position: relative;
   text-align: center !important;
-  width: 90% !important;
+  width: 80%;
   height: 20rem !important;
 }
 
