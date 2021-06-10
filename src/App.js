@@ -16,6 +16,7 @@ const App = () => {
         <Link href="#profile" title="Profile"/>
         <Link href="#work" title="Work"/>
         <Link href="#projects" title="Projects"/>
+        <Link href="#socialImpact" title="Social Impact"/>
         <Link href="#connect" title="Contact"/>
       </Anchor>
       <div id="profile"/>
@@ -73,6 +74,11 @@ const App = () => {
             <Thumbnail experience={projectData.fishbowl} />
           </Col>
         </Row>
+        <div id="socialImpact"/>
+      </section>
+      <section className="home-section">
+        <h2 id="socialImpact" className="section-title">Social Impact</h2>
+        <br />
       </section>
       <div id="connect"/>
       <Footer person={personalInfoData} />
