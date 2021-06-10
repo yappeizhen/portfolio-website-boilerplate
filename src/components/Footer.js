@@ -10,11 +10,11 @@ function Footer() {
                 <h3 style={{ color: "black" }}>Back to Top <ArrowUpOutlined /></h3>
             </BackTop>
             <div style={{ float: "center", marginTop: "-5px" }}>
-                <Button type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                <Button href="https://www.linkedin.com/in/peizhen/" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
                 &nbsp;&nbsp;
-                <Button type="primary" shape="circle" icon={<GithubOutlined />} />
+                <Button href="https://github.com/yappeizhen" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 &nbsp;&nbsp;
-                <Button type="primary" shape="circle" icon={<MailOutlined />} />
+                <Button href="mailto:yappeizhen@u.nus.edu" type="primary" shape="circle" icon={<MailOutlined />} />
             </div>
         </div >
     )
