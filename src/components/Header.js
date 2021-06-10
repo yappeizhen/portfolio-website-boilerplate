@@ -1,4 +1,8 @@
 import React, { useState } from "react"
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
+import Home from './../views/Home';
+import About from './../views/About';
+
 import { PageHeader, Menu } from 'antd';
 
 function Header(props) {
@@ -11,19 +15,36 @@ function Header(props) {
     }
     return (
         <div>
-            <PageHeader
-                ghost={true}
-                title={person.lastName + " " + person.firstName}
-                extra={[
-                    <Menu style={{ backgroundColor: "transparent" }} onClick={handleClickTab} selectedKeys={[currentTab]} mode="horizontal">
-                        <Menu.Item style={{fontWeight:'600'}} key="home">
-                            Home
-                        </Menu.Item>
-                    </Menu>
-                ]}
-                style={{ marginLeft: "100px", marginRight: "100px" }}
-            >
-            </PageHeader>
+            <BrowserRouter>
+                <PageHeader
+                    ghost={true}
+                    title={person.lastName + " " + person.firstName}
+                    extra={[
+                        <Menu style={{ backgroundColor: "transparent" }} onClick={handleClickTab} selectedKeys={[currentTab]} mode="horizontal">
+                            <Menu.Item style={{ fontWeight: '600' }} key="home">
+                                <Link to="/home">Home</Link>
+                            </Menu.Item>
+                            <Menu.Item href="/about" style={{ fontWeight: '600' }} key="about">
+                                <Link to="/about">About</Link>
+                            </Menu.Item>
+                        </Menu>
+                    ]}
+                    style={{ marginLeft: "100px", marginRight: "100px" }}
+                >
+                </PageHeader>
+                <Switch>
+                    <Route exact path="/">
+                        <Redirect to="/home" />
+                    </Route>
+                    <Route path="/home">
+                        <Home />
+                    </Route>
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                </Switch>
+
+            </BrowserRouter>
         </div>
     )
 }
