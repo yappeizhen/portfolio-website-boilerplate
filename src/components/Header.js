@@ -19,9 +19,6 @@ function Header(props) {
                         <Menu.Item style={{fontWeight:'600'}} key="home">
                             Home
                         </Menu.Item>
-                        <Menu.Item style={{fontWeight:'600'}} key="about">
-                            About
-                        </Menu.Item>
                     </Menu>
                 ]}
                 style={{ marginLeft: "100px", marginRight: "100px" }}
