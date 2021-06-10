@@ -40,7 +40,7 @@
 }
 
 .thumbnail-text {
-  width: 570px;
+  width: 570px !important;
 }
 
 .section-title {
