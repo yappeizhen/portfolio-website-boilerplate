@@ -19,7 +19,7 @@
 
 .thumbnail-wrapper {
   text-align: left;
-  display: inline;
+  display: inline-block;
 }
 
 .thumbnail-card {
@@ -37,6 +37,10 @@
   max-width: 70%;
   max-height: 90%;
   transform: translate(-50%,-50%);
+}
+
+.thumbnail-text {
+  width: 570px;
 }
 
 .section-title {

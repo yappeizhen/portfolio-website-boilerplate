@@ -9,8 +9,10 @@ function Thumbnail(props) {
             <Card className="thumbnail-card" style={{ backgroundColor: `${experience.themeColor}` }} >
                 <img className="thumbnail-img" alt="thumbnail" src={experience.img} />
             </Card>
-            <h3>{experience.name}</h3>
-            <h4>{experience.role}</h4>
+            <div className="thumbnail-text">
+                <h3>{experience.name}</h3>
+                <h4>{experience.role}</h4>
+            </div>
         </div>
     );
 }
