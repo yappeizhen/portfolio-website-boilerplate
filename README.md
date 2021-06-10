@@ -1,5 +1,5 @@
 # Link to view deployed website
-[view page](https://yappeizhen-7ea44.web.app/)
+View the current website [here](https://yappeizhen-7ea44.web.app/)
 
 # Getting Started with Create React App
 
