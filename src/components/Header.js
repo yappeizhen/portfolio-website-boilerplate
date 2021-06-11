@@ -4,6 +4,7 @@ import Home from './../views/Home';
 import About from './../views/About';
 
 import { PageHeader, Menu } from 'antd';
+import { personalInfoData } from './../assets/data/personalInfo';
 
 function Header(props) {
     const { person } = props;
@@ -40,7 +41,7 @@ function Header(props) {
                         <Home />
                     </Route>
                     <Route path="/about">
-                        <About />
+                        <About person={personalInfoData}/>
                     </Route>
                 </Switch>
 
