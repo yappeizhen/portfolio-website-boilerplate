@@ -7,13 +7,17 @@ function About(props) {
         <>
             <section className="about-section">
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={11}>
                         <div style={{ display: "inline" }}>
                             <img className="about-pic" alt="Profile" src={person.img} />
                         </div>
                     </Col>
-                    <Col lg={11}>
-
+                    <Col lg={12}>
+                        <div>
+                            <h1>Yap Pei Zhen</h1>
+                            <p>I am a year 2 undergraduate pursuing a double degree in Economics and Information Systems
+                            at the National University of Singapore.</p>
+                        </div>
                     </Col>
                 </Row>
             </section>

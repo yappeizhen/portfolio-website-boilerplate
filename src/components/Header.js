@@ -8,8 +8,7 @@ import { personalInfoData } from './../assets/data/personalInfo';
 
 function Header(props) {
     const { person } = props;
-
-    const [currentTab, setCurrentTab] = useState('home');
+    const [currentTab, setCurrentTab] = useState();
 
     const handleClickTab = (e) => {
         setCurrentTab(e.key);
