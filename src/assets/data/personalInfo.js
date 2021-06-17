@@ -88,7 +88,7 @@ export const projectData = {
 export const socialImpactData = {
     nusEnablers: {
         name: "NUS Enablers – Programmes Director",
-        role: "A student-run club building an inclusive community for students with special needs",
+        role: "Spearheaded several carnival events, panel forums, as well as Freshmen Orientation to promote the inclusion of students with special needs in the NUS community.",
         img: nusEnablersLogo,
         themeColor: "whitesmoke"
     },

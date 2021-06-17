@@ -1,6 +1,13 @@
 import React from "react";
-import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { Button, BackTop } from 'antd';
+
+// // Create a reference with an initial file path and name
+// var storage = firebase.storage();
+// var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
+
+// // Create a reference from a Google Cloud Storage URI
+// var gsReference = storage.refFromURL('gs://yappeizhen-7ea44.appspot.com/Yap Pei Zhen Resume.pdf'); 
 
 function Footer() {
     return (
@@ -15,6 +22,8 @@ function Footer() {
                 <Button href="https://github.com/yappeizhen" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 &nbsp;&nbsp;
                 <Button href="mailto:yappeizhen@u.nus.edu" type="primary" shape="circle" icon={<MailOutlined />} />
+                &nbsp;&nbsp;
+                <Button href="gs://yappeizhen-7ea44.appspot.com/Yap Pei Zhen Resume.pdf" type="primary" shape="circle" icon={<FilePdfOutlined />} />
             </div>
         </div >
     )
