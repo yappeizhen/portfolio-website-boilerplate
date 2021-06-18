@@ -26,7 +26,7 @@ export const personalInfoData = {
     img: peizhenImg,
     img1: peizhenImg1,
     profilePattern: pinkBullets,
-    aboutIntro: "I pursue a double degree in Economics and Information Systems at the National University of Singapore.",
+    aboutIntro: "I am an interdisciplinary student seeking to study the world from varied lenses and apply simple solutions to solve complex social problems. I enjoy tinkering with software development projects, and working with social enterprises to develop sustainable revenue streams.",
 }
 
 export const workExperienceData = {
@@ -109,3 +109,54 @@ export const socialImpactData = {
         themeColor: "whitesmoke"
     },
 }
+
+export const skillsList = [
+    {
+        name: "React",
+        color: "geekblue",
+    },
+    {
+        name: "React Native",
+        color: "purple",
+    },
+    {
+        name: "Angular",
+        color: "volcano"
+    },
+    {
+        name: "Typescript",
+        color: "cyan"
+    },
+    {
+        name: "Javascript",
+        color: "gold"
+    },
+    {
+        name: "JavaEE",
+        color: "lime"
+    },
+    {
+        name: "JPQL",
+        color: "magenta"
+    },
+    {
+        name: "Systems Thinking",
+        color: "volcano"
+    },
+    {
+        name: "C",
+        color: "blue"
+    },
+    {
+        name: "R",
+        color: "orange"
+    },
+    {
+        name: "Java",
+        color: "gold"
+    },
+    {
+        name: "Wiley Certified Big Data Analyst",
+        color: "green"
+    },
+]

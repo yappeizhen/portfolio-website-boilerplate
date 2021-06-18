@@ -99,9 +99,10 @@
 }
 
 .about-section {
-  margin-top: 50px;
   margin-left: 6.25rem;
   margin-right: 9.3rem;
+  padding-bottom: 100px;
+  text-align: left;
 }
 
 .about-pic {
@@ -115,6 +116,10 @@
 .about-me-intro {
   text-align: left;
   width: 80%;
+}
+
+.skill-tag {
+  margin-bottom: 10px !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24282,7 +24287,7 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
   font-feature-settings: "tnum";
   display: inline-block;
   height: auto;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 25px;
   white-space: nowrap;
   background: #fafafa;

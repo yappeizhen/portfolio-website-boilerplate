@@ -2,7 +2,6 @@ import React from "react";
 import Thumbnail from './../components/Thumbnail';
 import Introduction from './../components/Introduction';
 import Footer from './../components/Footer';
-
 import { personalInfoData, workExperienceData, projectData, socialImpactData } from './../assets/data/personalInfo';
 import { Row, Col, Anchor } from 'antd';
 const { Link } = Anchor;
