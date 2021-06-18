@@ -58,7 +58,7 @@ export const workExperienceData = {
 
 export const projectData = {
     mapTheSystem: {
-        name: "Oxford Map the System 2021 – National Winner and Representative",
+        name: "Oxford Map the System 2021 – Global 2nd Place, Audience Choice Award, National Champion and Representative",
         role: "Systems Thinking Researcher and Analyst",
         img: mtsLogo,
         themeColor: "#002147"
