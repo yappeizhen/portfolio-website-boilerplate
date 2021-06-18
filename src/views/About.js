@@ -1,5 +1,6 @@
 import React from "react"
-import { Row, Col, Tag } from 'antd';
+import { Row, Col, Tag, Button } from 'antd';
+import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
 
 function About(props) {
@@ -9,7 +10,7 @@ function About(props) {
             <div style={{ marginTop: '50px' }} className="about-section">
                 <Row>
                     <Col lg={10}>
-                        <div style={{ display: "inline"}}>
+                        <div style={{ display: "inline" }}>
                             <img className="about-pic" alt="Profile" src={person.img1} />
                         </div>
                     </Col>
@@ -26,7 +27,11 @@ function About(props) {
                         </div>
                     </Col>
                 </Row>
-
+                <section style={{textAlign: 'center'}}>
+                <Button href="https://www.linkedin.com/in/peizhen/" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                <Button href="https://github.com/yappeizhen" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
+                <Button href="mailto:yappeizhen@u.nus.edu" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+                </section>
             </div>
         </>
     )
