@@ -33,7 +33,7 @@
 .thumbnail-wrapper {
   text-align: left;
   display: inline-block;
-  max-width: 35.6rem;
+  width: 45%;
 }
 
 .thumbnail-wrapper.small {
@@ -45,8 +45,8 @@
 .thumbnail-card {
   position: relative;
   text-align: center !important;
-  width: 80%;
-  height: 15rem !important;
+  width: 90%;
+  height: 20rem !important;
 }
 
 .thumbnail-img {
@@ -62,6 +62,7 @@
 .thumbnail-text {
   width: 35.62rem !important;
   padding-right: 6.25rem;
+  padding-bottom: 20px;
 }
 
 .thumbnail-text.small {
@@ -104,12 +105,23 @@
   margin-left: -23%;
 }
 
-.home-section {
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-intro-section {
   margin-top: 150px;
   margin-bottom: 150px;
   margin-left: 6.25rem;
   margin-right: 9.3rem;
-  max-width: 1400px;
+}
+
+.home-section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: 6.25rem;
+  margin-right: 1rem;
 }
 
 .about-section {
@@ -117,7 +129,6 @@
   margin-right: 9.3rem;
   padding-bottom: 150px;
   text-align: left;
-  max-width: 1400px;
 }
 
 .about-pic {
@@ -27395,17 +27406,17 @@ h1 {
 }
 .h2,
 h2 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
 }
 .h3,
 h3 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
 }
 .h4,
 h4 {
-  font-size: 17px;
+  font-size: 18px;
 }
 .h5,
 h5 {
