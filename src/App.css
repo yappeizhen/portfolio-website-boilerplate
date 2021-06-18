@@ -20,13 +20,13 @@
 .thumbnail-wrapper {
   text-align: left;
   display: inline-block;
-  max-width: 570px;
+  max-width: 35.6rem;
 }
 
 .thumbnail-wrapper.small {
   text-align: left;
   display: inline-block;
-  max-width: 380px;
+  max-width: 23.75rem;
 }
 
 .thumbnail-card {
@@ -47,13 +47,13 @@
 }
 
 .thumbnail-text {
-  width: 570px !important;
-  padding-right: 100px;
+  width: 35.62rem !important;
+  padding-right: 6.25rem;
 }
 
 .thumbnail-text.small {
-  width: 400px;
-  padding-right: 270px;
+  width: 25rem;
+  padding-right: 16.8rem;
 }
 
 .section-title {
@@ -99,17 +99,22 @@
 }
 
 .about-section {
-  margin-top: 100px;
-  margin-bottom: 150px;
-  margin-right: 9rem;
+  margin-top: 50px;
+  margin-left: 6.25rem;
+  margin-right: 9.3rem;
 }
 
 .about-pic {
   border-radius: 5%;
   width: 300px;
   display: inline;
-  margin-top: -35px;
-  margin-left: -5%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-me-intro {
+  text-align: left;
+  width: 80%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -2769,7 +2774,7 @@ mark {
 .ant-anchor-wrapper {
   position: fixed;
   margin-top: 15%;
-  margin-left: 87%;
+  right: 160px;
   text-align: right;
   background-color: transparent;
 }

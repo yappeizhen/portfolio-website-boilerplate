@@ -1,5 +1,7 @@
 
 import peizhenImg from './../images/peizhen.jpg';
+import peizhenImg1 from './../images/peizhenRectangle.jpg';
+
 import pinkBullets from './../png/pink-bullet-points.png';
 
 import solvewareLogo from './../workLogos/solvewareLogo.png';
@@ -22,7 +24,8 @@ export const personalInfoData = {
     lastName: "Yap",
     areaOfInterest: "a Software Developer and Management Consultant",
     img: peizhenImg,
-    profilePattern: pinkBullets
+    img1: peizhenImg1,
+    profilePattern: pinkBullets,
 }
 
 export const workExperienceData = {

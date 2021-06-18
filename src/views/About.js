@@ -5,22 +5,22 @@ function About(props) {
     const { person } = props;
     return (
         <>
-            <section className="about-section">
+            <div className="about-section">
                 <Row>
                     <Col lg={11}>
                         <div style={{ display: "inline" }}>
-                            <img className="about-pic" alt="Profile" src={person.img} />
+                            <img className="about-pic" alt="Profile" src={person.img1} />
                         </div>
                     </Col>
                     <Col lg={12}>
-                        <div>
+                        <div className="about-me-intro">
                             <h1>Yap Pei Zhen</h1>
                             <p>I am a year 2 undergraduate pursuing a double degree in Economics and Information Systems
                             at the National University of Singapore.</p>
                         </div>
                     </Col>
                 </Row>
-            </section>
+            </div>
         </>
     )
 }
