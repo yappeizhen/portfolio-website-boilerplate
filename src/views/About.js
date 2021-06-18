@@ -8,12 +8,12 @@ function About(props) {
         <>
             <div style={{ marginTop: '50px' }} className="about-section">
                 <Row>
-                    <Col lg={11}>
-                        <div style={{ display: "inline" }}>
+                    <Col lg={10}>
+                        <div style={{ display: "inline"}}>
                             <img className="about-pic" alt="Profile" src={person.img1} />
                         </div>
                     </Col>
-                    <Col lg={12}>
+                    <Col lg={14}>
                         <div className="about-me-intro">
                             <h1>{person.lastName} {person.firstName}</h1>
                             <p>{person.aboutIntro}</p>

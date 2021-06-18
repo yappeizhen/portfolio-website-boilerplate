@@ -101,7 +101,7 @@
 .about-section {
   margin-left: 6.25rem;
   margin-right: 9.3rem;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   text-align: left;
 }
 
@@ -111,11 +111,13 @@
   display: inline;
   padding: 0;
   margin-bottom: 20px;
+  margin-left: 6rem;
 }
 
 .about-me-intro {
   text-align: left;
   width: 80%;
+  margin-bottom: 50px;
 }
 
 .skill-tag {
