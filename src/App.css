@@ -20,13 +20,13 @@
 .thumbnail-wrapper {
   text-align: left;
   display: inline-block;
-  max-width: 570px;
+  max-width: 35.6rem;
 }
 
 .thumbnail-wrapper.small {
   text-align: left;
   display: inline-block;
-  max-width: 380px;
+  max-width: 23.75rem;
 }
 
 .thumbnail-card {
@@ -47,13 +47,13 @@
 }
 
 .thumbnail-text {
-  width: 570px !important;
-  padding-right: 100px;
+  width: 35.62rem !important;
+  padding-right: 6.25rem;
 }
 
 .thumbnail-text.small {
-  width: 400px;
-  padding-right: 270px;
+  width: 25rem;
+  padding-right: 16.8rem;
 }
 
 .section-title {
@@ -96,6 +96,30 @@
   margin-bottom: 150px;
   margin-left: 6.25rem;
   margin-right: 9.3rem;
+}
+
+.about-section {
+  margin-left: 6.25rem;
+  margin-right: 9.3rem;
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+.about-pic {
+  border-radius: 5%;
+  width: 300px;
+  display: inline;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.about-me-intro {
+  text-align: left;
+  width: 80%;
+}
+
+.skill-tag {
+  margin-bottom: 10px !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -2755,7 +2779,7 @@ mark {
 .ant-anchor-wrapper {
   position: fixed;
   margin-top: 15%;
-  margin-left: 87%;
+  right: 160px;
   text-align: right;
   background-color: transparent;
 }
@@ -24263,7 +24287,7 @@ tr.ant-table-expanded-row .ant-descriptions-view table {
   font-feature-settings: "tnum";
   display: inline-block;
   height: auto;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 25px;
   white-space: nowrap;
   background: #fafafa;
