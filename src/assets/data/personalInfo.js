@@ -26,6 +26,7 @@ export const personalInfoData = {
     img: peizhenImg,
     img1: peizhenImg1,
     profilePattern: pinkBullets,
+    aboutIntro: "I pursue a double degree in Economics and Information Systems at the National University of Singapore.",
 }
 
 export const workExperienceData = {

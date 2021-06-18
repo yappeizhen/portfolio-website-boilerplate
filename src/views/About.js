@@ -14,9 +14,8 @@ function About(props) {
                     </Col>
                     <Col lg={12}>
                         <div className="about-me-intro">
-                            <h1>Yap Pei Zhen</h1>
-                            <p>I am a year 2 undergraduate pursuing a double degree in Economics and Information Systems
-                            at the National University of Singapore.</p>
+                            <h1>{person.lastName} {person.firstName}</h1>
+                            <p>{person.aboutIntro}</p>
                         </div>
                     </Col>
                 </Row>
