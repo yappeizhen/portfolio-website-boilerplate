@@ -4,6 +4,19 @@
   text-align: center;
 }
 
+.big-button {
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #fce1fb  100%) !important;
+  color: #ce4c92 !important;
+  margin: 10px !important;
+  size: 100px !important;
+}
+
+.big-button:hover {
+  background-position: right center !important;
+  color: #215e94 !important;
+  text-decoration: none !important;
+}
+
 .scrollNav {
   width: 5%;
   position: fixed;
