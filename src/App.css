@@ -96,6 +96,7 @@
   margin-bottom: 150px;
   margin-left: 6.25rem;
   margin-right: 9.3rem;
+  max-width: 1400px;
 }
 
 .about-section {
@@ -103,6 +104,7 @@
   margin-right: 9.3rem;
   padding-bottom: 150px;
   text-align: left;
+  max-width: 1400px;
 }
 
 .about-pic {
@@ -111,7 +113,7 @@
   display: inline;
   padding: 0;
   margin-bottom: 20px;
-  margin-left: 6rem;
+  margin-left: 3rem;
 }
 
 .about-me-intro {
