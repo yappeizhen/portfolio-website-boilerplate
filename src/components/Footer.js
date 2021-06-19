@@ -16,7 +16,7 @@ function Footer() {
             <BackTop style={{width: '150px', float: "right", position:"static"}}>
                 <h3 style={{ color: "black" }}>Back to Top <ArrowUpOutlined /></h3>
             </BackTop>
-            <div style={{ float: "center", marginTop: "-5px" }}>
+            <div style={{ float: "center", marginTop: "-5px", display: 'inline-block' }}>
                 <Button href="https://www.linkedin.com/in/peizhen/" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
                 &nbsp;&nbsp;
                 <Button href="https://github.com/yappeizhen" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { BrowserRouter, Route, Switch, Link, Redirect, useHistory } from 'react-router-dom';
+import React, { useState } from "react"
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import Home from './../views/Home';
 import About from './../views/About';
 
@@ -34,10 +34,13 @@ function Header(props) {
                 >
                 </PageHeader>
                 <Switch>
-                    <Route path="/home" component={Home}>
+                    <Route exact path="/" key="all">
+                        <Redirect to="/home"/>
+                    </Route>
+                    <Route path="/home" key="home">
                         <Home />
                     </Route>
-                    <Route path="/about" component={About}>
+                    <Route path="/about" key="about">
                         <About person={personalInfoData}/>
                     </Route>
                     <Route component={Home}/>

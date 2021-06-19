@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  padding-right: 1rem;
 }
 
 .big-button {
@@ -33,20 +34,22 @@
 .thumbnail-wrapper {
   text-align: left;
   display: inline-block;
-  max-width: 35.6rem;
+  width: 35rem;
+  max-width: 100%;
 }
 
 .thumbnail-wrapper.small {
   text-align: left;
   display: inline-block;
-  max-width: 23.75rem;
+  width: 23rem;
+  max-width: 100%;
 }
 
 .thumbnail-card {
   position: relative;
   text-align: center !important;
-  width: 80%;
-  height: 15rem !important;
+  width: 90%;
+  height: 20rem !important;
 }
 
 .thumbnail-img {
@@ -61,16 +64,27 @@
 
 .thumbnail-text {
   width: 35.62rem !important;
+  max-width: 100%;
   padding-right: 6.25rem;
+  padding-bottom: 20px;
 }
 
 .thumbnail-text.small {
   width: 25rem;
-  padding-right: 16.8rem;
+  max-width: 100%;
+  padding-right: 6.25rem;
+  padding-bottom: 20px;
+}
+
+.hr-divider {
+  border: dotted #ce4c92 5px;
+  border-bottom: none;
+  width: 3%;
 }
 
 .section-title {
-  text-align: left;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .App-logo {
@@ -104,20 +118,32 @@
   margin-left: -23%;
 }
 
-.home-section {
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center !important;
+}
+
+.home-intro-section {
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   margin-left: 6.25rem;
   margin-right: 9.3rem;
-  max-width: 1400px;
+}
+
+.home-section {
+  margin-top: 70px;
+  margin-bottom: 150px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .about-section {
-  margin-left: 6.25rem;
-  margin-right: 9.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 150px;
   text-align: left;
-  max-width: 1400px;
 }
 
 .about-pic {
@@ -27234,38 +27260,6 @@ div.ant-typography-edit-content.ant-typography-rtl {
   margin: 8px 0 0;
   padding: 0;
 }
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap)
-    format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap)
-    format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap)
-    format("truetype");
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap)
-    format("truetype");
-}
 @table-selected-row-bg: rgba(#ce4c92: 0.1);
 .ant-btn-dashed {
   border-width: 0.2rem;
@@ -27395,17 +27389,17 @@ h1 {
 }
 .h2,
 h2 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
 }
 .h3,
 h3 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
 }
 .h4,
 h4 {
-  font-size: 17px;
+  font-size: 18px;
 }
 .h5,
 h5 {
