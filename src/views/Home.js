@@ -3,7 +3,7 @@ import Thumbnail from './../components/Thumbnail';
 import Introduction from './../components/Introduction';
 import Footer from './../components/Footer';
 import { personalInfoData, workExperienceData, projectData, socialImpactData } from './../assets/data/personalInfo';
-import { Row, Col, Anchor } from 'antd';
+import { Anchor, Divider } from 'antd';
 const { Link } = Anchor;
 
 function Home() {
@@ -18,28 +18,31 @@ function Home() {
             <div id="profile" />
             <section className="home-intro-section">
                 <Introduction person={personalInfoData} />
-                <div id="work" />
             </section>
+            <h1 id="work" className="section-title">Work Experience</h1>
+            <hr className="hr-divider"/>
             <section className="home-section">
-                <h2 className="section-title">Work Experience</h2>
                 <br />
                 <div className="card-display">
-                    {workExperienceData.map((item) => (<Thumbnail experience={item} />))}
+                    {workExperienceData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
                 </div>
             </section>
+
+            <h1 id="projects" className="section-title">Projects</h1>
+            <hr className="hr-divider"/>
             <section className="home-section">
-                <h2 id="projects" className="section-title">Projects</h2>
                 <br />
                 <div className="card-display">
-                    {projectData.map((item) => (<Thumbnail experience={item} />))}
+                    {projectData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
                 </div>
-                <div id="socialImpact" />
             </section>
+
+            <h1 id="socialImpact" className="section-title">Social Impact</h1>
+            <hr className="hr-divider"/>
             <section className="home-section">
-                <h2 id="socialImpact" className="section-title">Social Impact</h2>
                 <br />
                 <div className="card-display">
-                    {socialImpactData.map((item) => (<Thumbnail size="small" experience={item} />))}
+                    {socialImpactData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
                 </div>
             </section>
             <Footer person={personalInfoData} />

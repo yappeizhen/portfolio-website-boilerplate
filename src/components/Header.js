@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { BrowserRouter, Route, Switch, Link, Redirect, useHistory } from 'react-router-dom';
+import React, { useState } from "react"
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import Home from './../views/Home';
 import About from './../views/About';
 

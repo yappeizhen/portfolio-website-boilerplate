@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col, Tag, Button } from 'antd';
-import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
 
 function About(props) {
@@ -22,7 +22,7 @@ function About(props) {
                         <div className="about-me-intro">
                             <h2>Skills</h2>
                             {skillsList.map((skill) => {
-                                return (<Tag className="skill-tag" color={skill.color}>{skill.name}</Tag>);
+                                return (<Tag className="skill-tag" key={skill.name} color={skill.color}>{skill.name}</Tag>);
                             })}
                         </div>
                     </Col>

@@ -6,7 +6,7 @@ function Thumbnail(props) {
     var chosenSize = ""
     if (size != null && size === "small") {
         chosenSize = " small";
-    } 
+    }
 
     return (
         <div className={"thumbnail-wrapper" + chosenSize}>
