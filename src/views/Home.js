@@ -3,7 +3,7 @@ import Thumbnail from './../components/Thumbnail';
 import Introduction from './../components/Introduction';
 import Footer from './../components/Footer';
 import { personalInfoData, workExperienceData, projectData, socialImpactData } from './../assets/data/personalInfo';
-import { Anchor, Divider } from 'antd';
+import { Anchor } from 'antd';
 const { Link } = Anchor;
 
 function Home() {
