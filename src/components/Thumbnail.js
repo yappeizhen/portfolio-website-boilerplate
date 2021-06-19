@@ -14,8 +14,8 @@ function Thumbnail(props) {
                 <img className="thumbnail-img" alt="thumbnail" src={experience.img} />
             </Card>
             <div className={"thumbnail-text" + chosenSize}>
-                <h3>{experience.name}</h3>
-                <h4>{experience.role}</h4>
+                <h2>{experience.name}</h2>
+                <h3>{experience.role}</h3>
             </div>
         </div>
     );
