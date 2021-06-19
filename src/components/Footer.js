@@ -11,7 +11,7 @@ import { Button, BackTop } from 'antd';
 
 function Footer() {
     return (
-        <div style={{ padding: '25px 80px', backgroundColor: "whitesmoke" }}>
+        <div style={{ padding: '25px 80px', backgroundColor: "whitesmoke"}}>
             <h3 style={{ float: "left", display: "inline", color: "black" }}>Let's Connect!</h3>
             <BackTop style={{width: '150px', float: "right", position:"static"}}>
                 <h3 style={{ color: "black" }}>Back to Top <ArrowUpOutlined /></h3>
