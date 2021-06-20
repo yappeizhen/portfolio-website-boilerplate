@@ -120,7 +120,6 @@
   border-radius: 50%;
   width: 370px;
   margin-top: -35px;
-  margin-right: -15%;
 }
 
 .profile-pattern {
@@ -128,7 +127,7 @@
   width: 230px;
   display: inline;
   z-index: -1;
-  padding-left: 30px;
+  padding-left: 3rem;
   margin-top: 100px;
   margin-left: -11%;
 }
@@ -155,18 +154,24 @@
 }
 
 .about-section {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 150px;
+  padding-bottom: 10px;
   text-align: left;
+}
+
+.about-summary {
+  width: 650px;
 }
 
 .about-pic {
   border-radius: 5%;
   width: 300px;
   display: inline;
-  padding: 0;
-  margin-bottom: 20px;
+  margin-right: 5rem;
+  margin-bottom: 30px;
   margin-left: 3rem;
 }
 
