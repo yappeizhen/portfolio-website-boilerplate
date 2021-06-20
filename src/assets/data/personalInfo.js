@@ -130,7 +130,7 @@ export const skillsList = [
     },
     {
         name: "Angular",
-        color: "volcano"
+        color: "magenta"
     },
     {
         name: "Typescript",
@@ -150,22 +150,22 @@ export const skillsList = [
     },
     {
         name: "Systems Thinking",
-        color: "volcano"
-    },
-    {
-        name: "C",
-        color: "blue"
-    },
-    {
-        name: "R",
         color: "orange"
     },
     {
+        name: "C",
+        color: "geekblue"
+    },
+    {
+        name: "R",
+        color: "lime"
+    },
+    {
         name: "Java",
-        color: "gold"
+        color: "purple"
     },
     {
         name: "Wiley Certified Big Data Analyst",
-        color: "green"
+        color: "blue"
     },
 ]
