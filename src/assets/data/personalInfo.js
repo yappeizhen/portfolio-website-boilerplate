@@ -11,6 +11,7 @@ import paLogo from './../workLogos/paLogo.png';
 
 import mtsLogo from './../projectLogos/mtsLogo.png';
 import perfectMatchLogo from './../projectLogos/perfectMatchLogo.png';
+import brainhackLogo from './../projectLogos/brainhack.png';
 import tcsLogo from './../projectLogos/tcsLogo.png';
 import scdfxibmLogo from './../projectLogos/scdfxibmLogo.png';
 import fishbowlLogo from './../projectLogos/fishbowlLogo.png';
@@ -26,7 +27,7 @@ export const personalInfoData = {
     img: peizhenImg,
     img1: peizhenImg1,
     profilePattern: pinkBullets,
-    aboutIntro: "I am an interdisciplinary student seeking to study the world from varied lenses and apply simple solutions to solve complex social problems. I enjoy tinkering with software development projects, and working with social enterprises to develop sustainable revenue streams.",
+    aboutIntro: "I am an interdisciplinary student seeking to study the world from varied lenses and apply simple solutions to solve complex social problems. I enjoy exploring software development projects, and working with social enterprises to develop sustainable revenue streams.",
 }
 
 export const workExperienceData = [
@@ -68,6 +69,12 @@ export const projectData = [
         role: "Full Stack Developer · Creator",
         img: perfectMatchLogo,
         themeColor: "#2b0e58"
+    },
+    {
+        name: "DSTA Code_EXP – SafeTravels",
+        role: "React Native Mobile App Developer",
+        img: brainhackLogo,
+        themeColor: "#000000"
     },
     {
         name: "TCS Sustainathon 2020",

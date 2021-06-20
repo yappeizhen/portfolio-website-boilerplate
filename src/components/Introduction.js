@@ -1,5 +1,4 @@
 import React from "react"
-import { Row, Col } from 'antd';
 
 function Introduction(props) {
     const { person } = props;

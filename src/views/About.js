@@ -1,5 +1,5 @@
 import React from "react"
-import { Row, Col, Tag, Button } from 'antd';
+import { Tag, Button } from 'antd';
 import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
 
