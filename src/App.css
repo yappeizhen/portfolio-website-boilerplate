@@ -53,6 +53,13 @@
   height: 20rem !important;
 }
 
+.icon-button {
+  background: transparent !important;
+  border: transparent !important;
+  margin-top: 10px !important;
+  color: #ce4c92 !important;
+}
+
 .thumbnail-img {
   position: absolute;
   display: block;

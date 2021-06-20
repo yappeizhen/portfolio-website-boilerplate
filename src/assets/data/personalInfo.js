@@ -38,10 +38,11 @@ export const workExperienceData = [
         themeColor: "#151d32"
     },
     {
-        name: "The Aphrodite Project – Core Team",
-        role: "Software Engineer · Singapore Chapter Lead",
+        name: "The Aphrodite Project",
+        role: "Core Team · Software Engineer · Singapore Chapter Lead",
         img: aphroditeLogo,
-        themeColor: "#fff7fa"
+        themeColor: "#fff7fa",
+        link: "https://aphrodite.global/"
     },
     {
         name: "180 Degrees Consulting NUS",
@@ -74,7 +75,8 @@ export const projectData = [
         name: "DSTA Code_EXP – SafeTravels",
         role: "React Native Mobile App Developer",
         img: brainhackLogo,
-        themeColor: "#000000"
+        themeColor: "#000000",
+        link: "https://expo.io/@yappeizhen/SafeTravels"
     },
     {
         name: "TCS Sustainathon 2020",
