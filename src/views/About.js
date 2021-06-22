@@ -1,9 +1,18 @@
-import React from "react"
-import { Tag, Button } from 'antd';
-import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
+import React, { useState } from "react"
+import { Tag, Button, Tooltip } from 'antd';
+import { LinkedinOutlined, GithubOutlined, MailOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
+import storage from "../config/firebase";
 
 function About(props) {
+    // Create a reference with an initial file path and name
+    var pathReference = storage.ref('YapPeiZhen_Resume.pdf');
+    const [resumeDownloadUrl, setResumeDownloadUrl] = useState();
+    pathReference.getDownloadURL()
+        .then((url) => {
+            setResumeDownloadUrl(url);
+        });
+
     const { person } = props;
     return (
         <>
@@ -24,10 +33,19 @@ function About(props) {
                     </div>
                 </div>
             </div>
-            <section style={{ textAlign: 'center' }}>
-                <Button href="https://www.linkedin.com/in/peizhen/" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
-                <Button href="https://github.com/yappeizhen" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
-                <Button href="mailto:yappeizhen@u.nus.edu" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+            <section style={{ textAlign: 'center', padding: '20px' }}>
+                <Tooltip title="LinkedIn">
+                    <Button href="https://www.linkedin.com/in/peizhen/" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                </Tooltip>
+                <Tooltip title="GitHub">
+                    <Button href="https://github.com/yappeizhen" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
+                </Tooltip>
+                <Tooltip title="Email">
+                    <Button href="mailto:yappeizhen@u.nus.edu" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+                </Tooltip>
+                <Tooltip title="Resume">
+                    <Button href={resumeDownloadUrl} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<FilePdfOutlined />} />
+                </Tooltip>
             </section>
         </>
     )
