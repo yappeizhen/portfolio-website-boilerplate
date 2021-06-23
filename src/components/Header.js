@@ -34,16 +34,15 @@ function Header(props) {
                 >
                 </PageHeader>
                 <Switch>
-                    <Route exact path="/" key="all">
+                    <Route exact path="/">
                         <Redirect to="/home"/>
                     </Route>
-                    <Route path="/home" key="home">
+                    <Route path="/home">
                         <Home />
                     </Route>
                     <Route path="/about" key="about">
                         <About person={personalInfoData}/>
                     </Route>
-                    <Route component={Home}/>
                 </Switch>
 
             </BrowserRouter>
