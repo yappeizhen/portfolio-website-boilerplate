@@ -3,7 +3,7 @@ import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined } from 
 import { Button, BackTop } from 'antd';
 // import storage from "../config/firebase";
 
-function Footer() {
+function Footer({person}) {
     // For connecting to firebase 
     // // Create a reference with an initial file path and name
     // var pathReference = storage.ref('Resume.pdf');
@@ -20,11 +20,11 @@ function Footer() {
                 <h3 style={{ color: "black", fontWeight: "600" }}>Back to Top <ArrowUpOutlined /></h3>
             </BackTop>
             <div style={{ float: "center", marginTop: "-5px", display: 'inline-block' }}>
-                <Button href="/#" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                <Button href={person.contact.linkedIn} target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
                 &nbsp;&nbsp;
-                <Button href="/#" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
+                <Button href={person.contact.gitHub} target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 &nbsp;&nbsp;
-                <Button href="mailto:email@email.com" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+                <Button href={`mailto:${person.contact.email}`} target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
                 {/* &nbsp;&nbsp;
                 <Button href={resumeDownloadUrl} target="_blank" type="primary" shape="circle" icon={<FilePdfOutlined />} /> */}
             </div>

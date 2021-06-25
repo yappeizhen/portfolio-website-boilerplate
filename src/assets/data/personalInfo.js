@@ -22,6 +22,11 @@ export const personalInfoData = {
     img1: img1,
     profilePattern: pinkBullets,
     aboutIntro: "I am an interdisciplinary student seeking to apply simple solutions to solve complex social problems.",
+    contact: {
+        linkedIn: "https://www.linkedin.com",
+        gitHub: "https://github.com",
+        email: "email@email.com",
+    }
 }
 
 export const workExperienceData = [

@@ -4,7 +4,7 @@ import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icon
 import { skillsList } from './../assets/data/personalInfo';
 //import storage from "../config/firebase";
 
-function About(props) {
+function About({ person }) {
     // For connecting to firebase 
     // // Create a reference with an initial file path and name
     // var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
@@ -14,7 +14,6 @@ function About(props) {
     //         setResumeDownloadUrl(url);
     //     });
 
-    const { person } = props;
     return (
         <>
             <div style={{ marginTop: '50px' }} className="about-section">
@@ -36,13 +35,13 @@ function About(props) {
             </div>
             <section style={{ textAlign: 'center', padding: '20px' }}>
                 <Tooltip title="LinkedIn">
-                    <Button href="/#" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                    <Button href={person.contact.linkedIn} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
                 </Tooltip>
                 <Tooltip title="GitHub">
-                    <Button href="/#" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
+                    <Button href={person.contact.gitHub} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 </Tooltip>
                 <Tooltip title="Email">
-                    <Button href="mailto:email@email.com" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+                    <Button href={`mailto:${person.contact.email}`} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
                 </Tooltip>
                 {/* <Tooltip title="Resume">
                     <Button href={resumeDownloadUrl} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<FilePdfOutlined />} />

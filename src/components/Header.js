@@ -6,8 +6,7 @@ import About from './../views/About';
 import { PageHeader, Menu } from 'antd';
 import { personalInfoData } from './../assets/data/personalInfo';
 
-function Header(props) {
-    const { person } = props;
+function Header({ person }) {
     const [currentTab, setCurrentTab] = useState();
 
     const handleClickTab = (e) => {
@@ -15,38 +14,35 @@ function Header(props) {
     }
 
     return (
-        <div>
-            <HashRouter>
-                <PageHeader
-                    ghost={true}
-                    title={person.firstName + " " + person.lastName}
-                    extra={[
-                        <Menu style={{ backgroundColor: "transparent" }} onClick={handleClickTab} selectedKeys={[currentTab]} mode="horizontal">
-                            <Menu.Item style={{ fontWeight: '600' }} key="home">
-                                <Link to="/home">Home</Link>
-                            </Menu.Item>
-                            <Menu.Item href="/about" style={{ fontWeight: '600' }} key="about">
-                                <Link to="/about">About</Link>
-                            </Menu.Item>
-                        </Menu>
-                    ]}
-                    style={{ marginLeft: "100px", marginRight: "100px" }}
-                >
-                </PageHeader>
-                <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/home">
-                        <Home />
-                    </Route>
-                    <Route path="/about" key="about">
-                        <About person={personalInfoData} />
-                    </Route>
-                </Switch>
-
-            </HashRouter>
-        </div>
+        <HashRouter>
+            <PageHeader
+                ghost={true}
+                title={person.firstName + " " + person.lastName}
+                extra={[
+                    <Menu style={{ backgroundColor: "transparent" }} onClick={handleClickTab} selectedKeys={[currentTab]} mode="horizontal">
+                        <Menu.Item style={{ fontWeight: '600' }} key="home">
+                            <Link to="/home">Home</Link>
+                        </Menu.Item>
+                        <Menu.Item href="/about" style={{ fontWeight: '600' }} key="about">
+                            <Link to="/about">About</Link>
+                        </Menu.Item>
+                    </Menu>
+                ]}
+                style={{ marginLeft: "100px", marginRight: "100px" }}
+            >
+            </PageHeader>
+            <Switch>
+                <Route path="/">
+                    <Home />
+                </Route>
+                <Route path="/home">
+                    <Home />
+                </Route>
+                <Route path="/about">
+                    <About person={personalInfoData} />
+                </Route>
+            </Switch>
+        </HashRouter>
     )
 }
 
