@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import Home from './../views/Home';
 import About from './../views/About';
 
@@ -16,7 +16,7 @@ function Header(props) {
 
     return (
         <div>
-            <BrowserRouter>
+            <HashRouter>
                 <PageHeader
                     ghost={true}
                     title={person.lastName + " " + person.firstName}
@@ -45,7 +45,7 @@ function Header(props) {
                     </Route>
                 </Switch>
 
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
