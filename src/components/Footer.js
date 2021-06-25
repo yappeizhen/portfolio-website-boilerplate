@@ -5,7 +5,7 @@ import storage from "../config/firebase";
 
 function Footer() {
     // Create a reference with an initial file path and name
-    var pathReference = storage.ref('YapPeiZhen_Resume.pdf');
+    var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
     const [resumeDownloadUrl, setResumeDownloadUrl] = useState();
     pathReference.getDownloadURL()
         .then((url) => {
@@ -23,9 +23,9 @@ function Footer() {
                 &nbsp;&nbsp;
                 <Button href="https://github.com/yappeizhen" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 &nbsp;&nbsp;
-                <Button href="mailto:yappeizhen@u.nus.edu" type="primary" shape="circle" icon={<MailOutlined />} />
+                <Button href="mailto:yappeizhen@u.nus.edu" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
                 &nbsp;&nbsp;
-                <Button href={resumeDownloadUrl} type="primary" shape="circle" icon={<FilePdfOutlined />} />
+                <Button href={resumeDownloadUrl} target="_blank" type="primary" shape="circle" icon={<FilePdfOutlined />} />
             </div>
         </div >
     )
