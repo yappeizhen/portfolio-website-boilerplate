@@ -6,7 +6,7 @@ import storage from "../config/firebase";
 
 function About(props) {
     // Create a reference with an initial file path and name
-    var pathReference = storage.ref('YapPeiZhen_Resume.pdf');
+    var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
     const [resumeDownloadUrl, setResumeDownloadUrl] = useState();
     pathReference.getDownloadURL()
         .then((url) => {
