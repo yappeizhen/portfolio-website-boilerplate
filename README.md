@@ -1,5 +1,9 @@
 # Link to view deployed website
-View the current website [here](https://yappeizhen-7ea44.web.app/)
+View my completed portfolio [here](https://yappeizhen-7ea44.web.app/).
+
+
+# For use as a template
+All data fields used in the template can be edited in the file src/assets/data/personalInfo.js and are automatically populated on the view pages. 
 
 # Getting Started with Create React App
 
