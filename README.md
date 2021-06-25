@@ -1,5 +1,5 @@
 # Link to view deployed website
-View my portfolio, the completed version of this boilerplate, [here](https://yappeizhen-7ea44.web.app/)
+View my completed portfolio [here](https://yappeizhen-7ea44.web.app/).
 
 
 # For use as a template
