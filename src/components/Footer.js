@@ -1,5 +1,5 @@
 import React from "react";
-import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import { Button, BackTop } from 'antd';
 // import storage from "../config/firebase";
 

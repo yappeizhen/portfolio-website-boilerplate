@@ -1,6 +1,6 @@
 import React from "react"
 import { Tag, Button, Tooltip } from 'antd';
-import { LinkedinOutlined, GithubOutlined, MailOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
 //import storage from "../config/firebase";
 
