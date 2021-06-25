@@ -1,4 +1,4 @@
-# Link to view deployed website
+# Deployed website
 View my completed portfolio [here](https://yappeizhen-7ea44.web.app/). This website was created with ReactJS and also supports the downloading of documents via Firebase backend.
 
 
