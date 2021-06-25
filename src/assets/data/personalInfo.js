@@ -1,121 +1,79 @@
 
-import peizhenImg from './../images/peizhen.jpg';
-import peizhenImg1 from './../images/peizhenRectangle.jpg';
+import img from './../images/profileImgHome.jpeg';
+import img1 from './../images/profileImgAbout.jpeg';
 
 import pinkBullets from './../png/pink-bullet-points.png';
 
-import solvewareLogo from './../workLogos/solvewareLogo.png';
-import aphroditeLogo from './../workLogos/aphroditeLogo.png';
-import oneEightyLogo from './../workLogos/oneEightyLogo.png';
-import paLogo from './../workLogos/paLogo.png';
+import workLogo1 from './../workLogos/workLogo1.png';
+import workLogo2 from './../workLogos/workLogo2.png';
 
-import mtsLogo from './../projectLogos/mtsLogo.png';
-import perfectMatchLogo from './../projectLogos/perfectMatchLogo.png';
-import brainhackLogo from './../projectLogos/brainhack.png';
-import tcsLogo from './../projectLogos/tcsLogo.png';
-import scdfxibmLogo from './../projectLogos/scdfxibmLogo.png';
-import fishbowlLogo from './../projectLogos/fishbowlLogo.png';
+import project1 from './../projectLogos/projectLogo1.png';
+import project2 from './../projectLogos/projectLogo2.png';
 
-import nusEnablersLogo from './../socialImpactLogos/nusEnablersLogo.png';
-import evgLogo from './../socialImpactLogos/evgLogo.png';
-import connectTuitionLogo from './../socialImpactLogos/connectTuitionLogo.png';
+import socialImpact1 from './../socialImpactLogos/socialImpactLogo1.png';
+import socialImpact2 from './../socialImpactLogos/socialImpactLogo2.png';
+import socialImpact3 from './../socialImpactLogos/socialImpactLogo3.png';
 
 export const personalInfoData = {
     firstName: "Pei Zhen",
     lastName: "Yap",
-    areaOfInterest: "a Software Developer and Management Consultant",
-    img: peizhenImg,
-    img1: peizhenImg1,
+    areaOfInterest: "a Software Developer",
+    img: img,
+    img1: img1,
     profilePattern: pinkBullets,
-    aboutIntro: "I am an interdisciplinary student seeking to study the world from varied lenses and apply simple solutions to solve complex social problems. I enjoy exploring software development projects, and working with social enterprises to develop sustainable revenue streams.",
+    aboutIntro: "I am an interdisciplinary student seeking to apply simple solutions to solve complex social problems.",
 }
 
 export const workExperienceData = [
     {
-        name: "The Solveware Co.",
+        name: "Company Name 1",
         role: "Frontend Development Intern",
-        img: solvewareLogo,
-        themeColor: "#151d32"
+        img: workLogo1,
+        themeColor: "#d5c3eb",
+        link: "/#",
     },
     {
-        name: "The Aphrodite Project",
-        role: "Core Team · Software Engineer · Singapore Chapter Lead",
-        img: aphroditeLogo,
-        themeColor: "#fff7fa",
-        link: "https://aphrodite.global/"
-    },
-    {
-        name: "180 Degrees Consulting NUS",
-        role: "Deputy Project Leader · Project Analyst",
-        img: oneEightyLogo,
-        themeColor: "whitesmoke"
-    },
-    {
-        name: "People's Association – SkillsFuture Advice",
-        role: "Central Singapore Community Development Council Intern",
-        img: paLogo,
-        themeColor: "whitesmoke"
+        name: "Company Name 2",
+        role: "Software Engineer",
+        img: workLogo2,
+        themeColor: "#c7ddf0",
     },
 ]
 
 export const projectData = [
     {
-        name: "Oxford Map the System 2021 – Global 2nd Place, Audience Choice Award, National Champion and Representative",
-        role: "Systems Thinking Researcher and Analyst",
-        img: mtsLogo,
-        themeColor: "#002147"
+        name: "Project 1",
+        role: "Systems Thinking Researcher",
+        img: project1,
+        themeColor: "#c7f0e2",
+        link: "/#",
     },
     {
-        name: "Perfect Match – A Business Networking Platform",
+        name: "Project 2",
         role: "Full Stack Developer · Creator",
-        img: perfectMatchLogo,
-        themeColor: "#2b0e58"
-    },
-    {
-        name: "DSTA Code_EXP – SafeTravels",
-        role: "React Native Mobile App Developer",
-        img: brainhackLogo,
-        themeColor: "#000000",
-        link: "https://expo.io/@yappeizhen/SafeTravels"
-    },
-    {
-        name: "TCS Sustainathon 2020",
-        role: "Participant · Image Recognition Development",
-        img: tcsLogo,
-        themeColor: "#000000"
-    },
-    {
-        name: "SCDF X IBM Lifesaver's Innovation Challenge 2020",
-        role: "Participant · IBM Watson Chatbot Developer",
-        img: scdfxibmLogo,
-        themeColor: "#270f3e"
-    },
-    {
-        name: "The Fishbowl Challenge 2020",
-        role: "Challenger · Entrepreneur",
-        img: fishbowlLogo,
-        themeColor: "whitesmoke"
+        img: project2,
+        themeColor: "#f0eec7"
     },
 ]
 
 export const socialImpactData = [
     {
-        name: "NUS Enablers – Programmes Director",
-        role: "Spearheaded several carnival events, panel forums, as well as Freshmen Orientation to promote the inclusion of students with special needs in the NUS community.",
-        img: nusEnablersLogo,
-        themeColor: "whitesmoke"
+        name: "Social Impact 1",
+        role: "Spearheaded several carnival events, panel forums, as well as Freshmen Orientation to promote the inclusion of students with special needs in the community.",
+        img: socialImpact1,
+        themeColor: "#f0c7eb"
     },
     {
-        name: "Project Agritourism – Leader",
+        name: "Social Impact 2",
         role: "Launched a new agricultural tourism model in Tra Vinh, Vietnam to stimulate upskilling and create sustainable income sources",
-        img: evgLogo,
-        themeColor: "whitesmoke"
+        img: socialImpact2,
+        themeColor: "#f0d3c7"
     },
     {
-        name: "Connect Tuition – Head of Relations",
+        name: "Social Impact 3",
         role: "Initiated a virtual mentorship programme for underprivileged students, providing tutoring support in light of COVID-19 disruptions",
-        img: connectTuitionLogo,
-        themeColor: "whitesmoke"
+        img: socialImpact3,
+        themeColor: "#c7cef0"
     },
 ]
 

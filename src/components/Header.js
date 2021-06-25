@@ -19,7 +19,7 @@ function Header(props) {
             <HashRouter>
                 <PageHeader
                     ghost={true}
-                    title={person.lastName + " " + person.firstName}
+                    title={person.firstName + " " + person.lastName}
                     extra={[
                         <Menu style={{ backgroundColor: "transparent" }} onClick={handleClickTab} selectedKeys={[currentTab]} mode="horizontal">
                             <Menu.Item style={{ fontWeight: '600' }} key="home">

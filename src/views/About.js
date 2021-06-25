@@ -1,17 +1,18 @@
-import React, { useState } from "react"
+import React from "react"
 import { Tag, Button, Tooltip } from 'antd';
 import { LinkedinOutlined, GithubOutlined, MailOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { skillsList } from './../assets/data/personalInfo';
-import storage from "../config/firebase";
+//import storage from "../config/firebase";
 
 function About(props) {
-    // Create a reference with an initial file path and name
-    var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
-    const [resumeDownloadUrl, setResumeDownloadUrl] = useState();
-    pathReference.getDownloadURL()
-        .then((url) => {
-            setResumeDownloadUrl(url);
-        });
+    // For connecting to firebase 
+    // // Create a reference with an initial file path and name
+    // var pathReference = storage.ref('Yap Pei Zhen Resume.pdf');
+    // const [resumeDownloadUrl, setResumeDownloadUrl] = useState();
+    // pathReference.getDownloadURL()
+    //     .then((url) => {
+    //         setResumeDownloadUrl(url);
+    //     });
 
     const { person } = props;
     return (
@@ -22,7 +23,7 @@ function About(props) {
                 </div>
                 <div className="about-summary">
                     <div className="about-me-intro">
-                        <h1>{person.lastName} {person.firstName}</h1>
+                        <h1>{person.firstName} {person.lastName}</h1>
                         <p>{person.aboutIntro}</p>
                     </div>
                     <div className="about-me-intro">
@@ -35,17 +36,17 @@ function About(props) {
             </div>
             <section style={{ textAlign: 'center', padding: '20px' }}>
                 <Tooltip title="LinkedIn">
-                    <Button href="https://www.linkedin.com/in/peizhen/" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
+                    <Button href="/#" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<LinkedinOutlined />} />
                 </Tooltip>
                 <Tooltip title="GitHub">
-                    <Button href="https://github.com/yappeizhen" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
+                    <Button href="/#" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<GithubOutlined />} />
                 </Tooltip>
                 <Tooltip title="Email">
-                    <Button href="mailto:yappeizhen@u.nus.edu" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
+                    <Button href="mailto:email@email.com" size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<MailOutlined />} />
                 </Tooltip>
-                <Tooltip title="Resume">
+                {/* <Tooltip title="Resume">
                     <Button href={resumeDownloadUrl} size='large' className="big-button" target="_blank" type="primary" shape="circle" icon={<FilePdfOutlined />} />
-                </Tooltip>
+                </Tooltip> */}
             </section>
         </>
     )
