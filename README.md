@@ -1,9 +1,10 @@
-# Link to view deployed website
-View my completed portfolio [here](https://yappeizhen-7ea44.web.app/).
+# Deployed website
+View my completed portfolio [here](https://yappeizhen-7ea44.web.app/). This website was created with ReactJS and also supports the downloading of documents via Firebase backend.
 
 
 # For use as a template
-All data fields used in the template can be edited in the file src/assets/data/personalInfo.js and are automatically populated on the view pages. 
+All data fields used in the template can be edited in the file src/assets/data/personalInfo.js and are automatically populated on the view pages. To change the primary color of the website, replace all instances of "#ce4c92" in App.css to the hex code of your desired color.
+
 
 # Getting Started with Create React App
 
@@ -12,6 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs all dependencies for the project.
 
 ### `yarn start`
 
