@@ -32,14 +32,14 @@ function Header({ person }) {
             >
             </PageHeader>
             <Switch>
-                <Route path="/">
-                    <Home />
-                </Route>
                 <Route path="/home">
                     <Home />
                 </Route>
                 <Route path="/about">
                     <About person={personalInfoData} />
+                </Route>
+                <Route path="/">
+                    <Home />
                 </Route>
             </Switch>
         </HashRouter>
