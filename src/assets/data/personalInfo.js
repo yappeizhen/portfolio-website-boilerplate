@@ -1,27 +1,23 @@
-
-import img from './../images/profileImgHome.jpeg';
 import img1 from './../images/profileImgAbout.jpeg';
-
+import img from './../images/profileImgHome.jpeg';
 import pinkBullets from './../png/pink-bullet-points.png';
-
-import workLogo1 from './../workLogos/workLogo1.png';
-import workLogo2 from './../workLogos/workLogo2.png';
-
 import project1 from './../projectLogos/projectLogo1.png';
 import project2 from './../projectLogos/projectLogo2.png';
-
 import socialImpact1 from './../socialImpactLogos/socialImpactLogo1.png';
 import socialImpact2 from './../socialImpactLogos/socialImpactLogo2.png';
 import socialImpact3 from './../socialImpactLogos/socialImpactLogo3.png';
+import workLogo1 from './../workLogos/workLogo1.png';
+import workLogo2 from './../workLogos/workLogo2.png';
 
 export const personalInfoData = {
+    themeColor: { primaryColor: "#ce4c92" },
     firstName: "Pei Zhen",
     lastName: "Yap",
     areaOfInterest: "a Software Developer",
     img: img,
     img1: img1,
     profilePattern: pinkBullets,
-    aboutIntro: "I am an interdisciplinary student seeking to apply simple solutions to solve complex social problems.",
+    aboutIntro: ["I am an interdisciplinary student seeking to apply simple solutions to solve complex social problems.", "In my free time, I enjoy birdwatching and indulging in fantasy novels."],
     contact: {
         linkedIn: "https://www.linkedin.com",
         gitHub: "https://github.com",

@@ -1,50 +1,42 @@
 import React from "react";
-import Thumbnail from './../components/Thumbnail';
-import Introduction from './../components/Introduction';
-import Footer from './../components/Footer';
-import { personalInfoData, workExperienceData, projectData, socialImpactData } from './../assets/data/personalInfo';
-import { Anchor } from 'antd';
-const { Link } = Anchor;
+import styled from 'styled-components';
+
+import { personalInfoData, projectData, socialImpactData, workExperienceData } from './../assets/data/personalInfo';
+import Footer from "../components/Footer";
+import Introduction from "../components/Introduction";
+import SectionHeader from "../components/SectionHeader";
+import Thumbnail from "../components/Thumbnail";
+
+// Styled Components
+const StyledCardDisplay = styled.div`
+& {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+`;
 
 function Home() {
+
     return (
         <>
-            <Anchor class="scrollNav">
-                <Link href="#profile" title="Profile" />
-                <Link href="#work" title="Work" />
-                <Link href="#projects" title="Projects" />
-                <Link href="#socialImpact" title="Social Impact" />
-            </Anchor>
-            <div id="profile" />
-            <section className="home-intro-section">
-                <Introduction person={personalInfoData} />
-            </section>
-            <h1 id="work" className="section-title">Work Experience</h1>
-            <hr className="hr-divider"/>
-            <section className="home-section">
-                <br />
-                <div className="card-display">
-                    {workExperienceData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
-                </div>
-            </section>
-
-            <h1 id="projects" className="section-title">Projects</h1>
-            <hr className="hr-divider"/>
-            <section className="home-section">
-                <br />
-                <div className="card-display">
-                    {projectData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
-                </div>
-            </section>
-
-            <h1 id="socialImpact" className="section-title">Social Impact</h1>
-            <hr className="hr-divider"/>
-            <section className="home-section">
-                <br />
-                <div className="card-display">
-                    {socialImpactData.map((item) => (<Thumbnail key={item.name} experience={item} />))}
-                </div>
-            </section>
+            <Introduction person={personalInfoData} />
+            <SectionHeader title="Work Experience" />
+            <StyledCardDisplay>
+                {workExperienceData.map((item) => (<Thumbnail key={item.name} person={personalInfoData} experience={item} />))}
+            </StyledCardDisplay>
+            <br />
+            <SectionHeader title="Projects" />
+            <StyledCardDisplay>
+                {projectData.map((item) => (<Thumbnail key={item.name} person={personalInfoData} experience={item} />))}
+            </StyledCardDisplay>
+            <br />
+            <SectionHeader title="Social Impact" />
+            <StyledCardDisplay>
+                {socialImpactData.map((item) => (<Thumbnail key={item.name} person={personalInfoData} experience={item} />))}
+            </StyledCardDisplay>
             <Footer person={personalInfoData} />
         </>
     )
