@@ -1,8 +1,9 @@
-# portfolio-website-boilerplate
+# Deployed website
+View my completed portfolio [here](https://yappeizhen-7ea44.web.app/). This website was created with ReactJS and also supports the downloading of documents via Firebase backend.
 
-A ReactJS template for creating a portfolio website. 
-View the template website [here](https://yappeizhen.github.io/portfolio-website-boilerplate).
-View my completed website [here](https://yappeizhen-7ea44.web.app/)
+
+# For use as a template
+All data fields used in the template can be edited in the file src/assets/data/personalInfo.js and are automatically populated on the view pages. To change the primary color of the website, replace all instances of "#ce4c92" in App.css to the hex code of your desired color.
 
 
 # Getting Started with Create React App
@@ -12,6 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs all dependencies for the project.
 
 ### `yarn start`
 
@@ -46,3 +51,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
